@@ -7,7 +7,7 @@ export default function ContainerBlock({
   children, // Aquí se destructura children
   ...customMeta
 }: {
-  children: React.ReactNode; // Aquí se define el tipo de children
+  children: React.ReactNode;
 }) {
   const meta = {
     title: "Nicolas Ottati - Developer, Event&Project Manager",

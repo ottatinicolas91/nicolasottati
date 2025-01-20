@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ContainerBlock from "@/components/container-block";
 
-export default function Homepage() {
+export default function HomePage() {
   return (
     <ContainerBlock>
       <div>

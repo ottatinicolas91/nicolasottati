@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { useMemo } from "react";
+
 export default function NavLinks() {
   return (
     <div className="flex gap-10 transition-all duration-200 fade-in-out">
