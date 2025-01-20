@@ -1,9 +1,9 @@
 import ContainerBlock from "@/components/container-block";
 
-export default function AboutPage() {
+export default function ExperiencePage() {
   return (
     <ContainerBlock>
-      <div>About</div>
+      <div>Experience</div>
     </ContainerBlock>
   );
 }

@@ -1,9 +1,9 @@
 import ContainerBlock from "@/components/container-block";
 
-export default function AboutPage() {
+export default function ContactPage() {
   return (
     <ContainerBlock>
-      <div>About</div>
+      <div>Contact</div>
     </ContainerBlock>
   );
 }
