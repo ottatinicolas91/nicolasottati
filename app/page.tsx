@@ -1,11 +1,12 @@
 import Image from "next/image";
-
-import Navbar from "@/components/navbar";
+import ContainerBlock from "@/components/container-block";
 
 export default function Homepage() {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <ContainerBlock>
+      <div>
+        <h1 className="text-3xl font-bold">Components to be added here</h1>
+      </div>
+    </ContainerBlock>
   );
 }
