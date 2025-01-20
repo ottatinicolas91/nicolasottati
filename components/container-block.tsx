@@ -35,7 +35,7 @@ export default function ContainerBlock({
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
       </Head>
-      <main className="dark:bg-gray-800 flex flex-col min-h-screen w-full">
+      <main className="dark:bg-stone-950 flex flex-col min-h-screen w-full">
         <Navbar />
         <div className="mt-6 ml-4 mr-4">{children}</div>
         <Footer />
