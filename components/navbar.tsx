@@ -5,8 +5,8 @@ import { ThemeProvider } from "next-themes";
 
 export default async function Navbar() {
   return (
-    <div className="transition-all duration-200 fade-in-out">
-      <div className="flex justify-between items-center p-4 shadow-md dark:bg-gray-dark">
+    <div className="pb-6 transition-all duration-200 fade-in-out">
+      <div className="flex justify-between items-center p-4 shadow-md">
         <div className="flex flex-col items-start dark:text-white">
           <div className="text-2xl text-gray-700 font-bold transition-all duration-200 fade-in-out dark:text-white">
             Nicolas Ottati
