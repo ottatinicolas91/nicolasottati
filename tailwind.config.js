@@ -6,7 +6,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     './node_modules/preline/preline.js',
   ],
-  darkMode: 'class',
+  darkMode: 'selector',
   theme: {
     screens: {
       sm: '640px',
@@ -55,6 +55,17 @@ module.exports = {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+    },
+    fontWeight: {
+      thin: '100',
+      extralight: '200',
+      light: '300',
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      'extra-bold': '800',
+      black: '900',
     },
     extend: {
       spacing: {

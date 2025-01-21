@@ -37,7 +37,7 @@ export default function ContainerBlock({
       </Head>
       <main className="dark:bg-stone-950 flex flex-col min-h-screen w-full">
         <Navbar />
-        <div className="mt-6 ml-4 mr-4">{children}</div>
+        <div className="">{children}</div>
         <Footer />
       </main>
     </div>
