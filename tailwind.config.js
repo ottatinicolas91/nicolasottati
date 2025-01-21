@@ -6,7 +6,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     './node_modules/preline/preline.js',
   ],
-  darkMode: 'class',
+  darkMode: 'selector',
   theme: {
     screens: {
       sm: '640px',
