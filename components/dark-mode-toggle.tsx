@@ -25,14 +25,12 @@ export default function DarkModeToggle() {
     <div className="flex items-center gap-2">
       <button
         type="button"
-        className={`hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800 ${
-          isDarkMode ? "hidden" : "block"
-        }`}
+        className={`hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800 `}
         onClick={handleToggle}
       >
         <span className="group inline-flex shrink-0 justify-center items-center size-9">
           <svg
-            className="shrink-0 size-4"
+            className="shrink-0 size-6"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -56,7 +54,7 @@ export default function DarkModeToggle() {
       >
         <span className="group inline-flex shrink-0 justify-center items-center size-9">
           <svg
-            className="shrink-0 size-4"
+            className="shrink-0 size-6"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"

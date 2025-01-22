@@ -4,15 +4,6 @@ import Link from "next/link";
 
 export default function SocialsVerticalList() {
   return (
-    // <div className="flex gap-4">
-    //   <Link
-    //     href="https://www.instagram.com/ottati_dj/"
-    //     target="__blank"
-    //     className="text-gray-700 hover:text-gray-500 transition-all duration-200 fade-in-out dark:text-white dark:hover:text-gray-400"
-    //   >
-    //     <SiInstagram strokeWidth={1} />
-    //   </Link>
-    // </div>
     <div className="max-w-xs flex flex-col my-4">
       <Link
         target="_blank"
