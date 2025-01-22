@@ -1,5 +1,4 @@
 import NavSocials from "./nav-socials";
-import { ThemeProvider } from "next-themes";
 
 export default function Footer() {
   return (

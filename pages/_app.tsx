@@ -1,10 +1,7 @@
 import "../styles/globals.css";
-import { ThemeProvider } from "next-themes";
 
-function MyApp({ Component, pageProps }: { Component: React.ComponentType<any>; pageProps: any }) {
-  return (
-    <Component {...pageProps} />
-  );
+function MyApp({ Component, pageProps }: { Component: React.ComponentType<unknown>; pageProps: Record<string, unknown> }) {
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

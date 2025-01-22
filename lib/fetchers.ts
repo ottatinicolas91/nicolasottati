@@ -1,6 +1,5 @@
 "use server";
 
-import { NextRequest } from "next/server";
 import { Experience } from "./types";
 
 export async function getExperience(): Promise<Experience[]> {

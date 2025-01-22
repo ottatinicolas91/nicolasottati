@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
-import { ThemeProvider } from "next-themes";
 import PrelineScript from "@/components/PrelineScript";
 
 const geistSans = Geist({
@@ -27,10 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* <ThemeProvider defaultTheme="light" attribute="class"> */}
           <PrelineScript />
           {children}
-        {/* </ThemeProvider> */}
       </body>
     </html>
   );

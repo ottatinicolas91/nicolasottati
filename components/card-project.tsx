@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import ModalProject from "./modal-project";
 
@@ -19,7 +17,7 @@ export default function CardProject() {
   return (
     <>
       <div
-        className="flex flex-col mx-4 group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg hover:scale-[1.02] focus:outline-none focus:shadow-lg transition duration-200 ease-in-out dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70"
+        className="flex flex-col mx-4 group bg-white border shadow-xl rounded-xl overflow-hidden hover:shadow-2xl dark:hover:shadow-neutral-950 hover:scale-[1.02] focus:outline-none focus:shadow-lg transition duration-200 ease-in-out dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-950"
         onClick={() => setIsModalOpen(true)}
       >
         <div className="relative pt-[50%] sm:pt-[60%] lg:pt-[50%] rounded-t-xl overflow-hidden">

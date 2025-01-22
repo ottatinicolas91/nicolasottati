@@ -1,7 +1,6 @@
 import NavLinks from "./nav-links";
 import NavSocials from "./nav-socials";
 import DarkModeToggle from "./dark-mode-toggle";
-import { ThemeProvider } from "next-themes";
 
 export default async function Navbar() {
   return (
