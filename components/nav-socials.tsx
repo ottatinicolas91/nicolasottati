@@ -1,6 +1,5 @@
 import { Linkedin } from "lucide-react";
 import { SiGithub, SiInstagram } from "@icons-pack/react-simple-icons";
-import { ThemeProvider } from "next-themes";
 
 import Link from "next/link";
 

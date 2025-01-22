@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ContainerBlock from "@/components/container-block";
 import ContactForm from "@/components/contact-form";
 import ContactLinks from "@/components/contact-links";
@@ -16,7 +15,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto py-20">
             <div className="col-span-1 max-w-lg">
               <h2 className="text-3xl font-semibold text-black dark:text-gray-200">
-                Let's talk!
+                Let&apos;s talk!
               </h2>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 {

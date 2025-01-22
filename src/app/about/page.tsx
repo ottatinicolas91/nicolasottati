@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="px-4 bg-[#F1F1F1] -mt-10 dark:bg-neutral-900">
           <div className="text-container max-w-6xl mx-auto pt-20">
             <p className="leading-loose text-lg md:text-xl font-semibold mx-4 dark:text-white">
-              I'm a Junior Full-Stack Developer with experience in software
+              I&apos;m a Junior Full-Stack Developer with experience in software
               development and a strong background in UI/UX design, marketing,
               digital communication, and large-scale event management within the
               entertainment industry. After graduating from the intensive Web
@@ -75,25 +75,25 @@ export default function AboutPage() {
             <div className="col-span-1 md:col-span-2">
               <div>
                 <p className="text-xl text-black mb-4 dark:text-gray-300 ">
-                  I've been developing full-stack application since I was 10
-                  years old. I didn't know what full-stack meant at that time
-                  because the term was not coined back then. I'm so out of
-                  content right now that I'm literally crying writing this text
+                  I&apos;ve been developing full-stack application since I was 10
+                  years old. I didn&apos;t know what full-stack meant at that time
+                  because the term was not coined back then. I&apos;m so out of
+                  content right now that I&apos;m literally crying writing this text
                   since lorem text is so 2012 now.
                 </p>
                 <p className="text-xl text-black mb-4 dark:text-gray-300 ">
                   After learning HTML and struggling with CSS, I came up with a
-                  brilliant idea of using bootstrap so that I don't have to
+                  brilliant idea of using bootstrap so that I don&apos;t have to
                   style everything by myself and - for obvious reasons - if you
                   knew bootstrap, you were cool.
                 </p>
                 <p className="text-xl text-black mb-4 dark:text-gray-300 ">
-                  But now, I'm a legend. I've been coding in React, Angular,
+                  But now, I&apos;m a legend. I&apos;ve been coding in React, Angular,
                   Vue, Svelte, Node.js, Express, Fastify, MongoDB, MySQL,
                   Bootstrap, Tailwind, C, C++, C#, Rust, Haskell, Perl, PHP,
                   Assembly, Logo and YouDontKnowShit programming language etc to
                   name a few. Although I barely know the syntax (Psst, Stack
-                  overflow!), I consider myself a Ninja developer I'm laughing
+                  overflow!), I consider myself a Ninja developer I&apos;m laughing
                   right now.
                 </p>
               </div>

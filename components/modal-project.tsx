@@ -82,7 +82,7 @@ export default function ModalProject({ onClose }: { onClose: () => void }) {
                   get users going in the right direction. Be bold and offer just
                   enough help to get the work started, and then get out of the
                   way. Give accurate information so users can make educated
-                  decisions. Know your user's struggles and desired outcomes and
+                  decisions. Know your user&apos;s struggles and desired outcomes and
                   give just enough information to let them get where they need
                   to go.
                 </p>
