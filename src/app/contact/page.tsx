@@ -20,7 +20,7 @@ export default function ContactPage() {
               </h2>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 {
-                  "I'm looking for a job currently, If you see me as a good fit, please don't hesitate and hit me through these channels "
+                  "I'm looking for a job currently, If you see me as a good fit, please don't hesitate and contact me through these channels "
                 }
               </p>
               <div className="mt-10">
