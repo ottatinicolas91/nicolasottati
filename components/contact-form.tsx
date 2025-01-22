@@ -37,7 +37,7 @@ export default async function ContactForm() {
           rows={3}
           placeholder="Write your message here"
         ></textarea>
-                <div className="absolute bottom-2 end-3 z-10">
+        <div className="absolute bottom-2 end-3 z-10">
           <button
             type="button"
             className="py-1.5 px-3 inline-flex shrink-0 justify-center items-center text-sm font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:bg-blue-500 disabled:opacity-50 disabled:pointer-events-none"
