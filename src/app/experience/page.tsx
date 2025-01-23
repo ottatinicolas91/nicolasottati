@@ -1,9 +1,8 @@
 import ContainerBlock from "@/components/container-block";
 import CardExperience from "@/components/card-experience";
-import { getExperience } from "@/lib/fetchers";
+import { experiencesData } from "@/lib/data";
 
 export default async function ExperiencePage() {
-  const experience = await getExperience();
   return (
     <ContainerBlock>
       <section className="bg-white dark:bg-black mx-auto">
@@ -14,8 +13,8 @@ export default async function ExperiencePage() {
         </div>
         <div className="px-4 bg-[#F1F1F1] -mt-10 min-h-dvh dark:bg-neutral-900"> {/*remember to change to the correct height */}
           <div className="flex flex-col items-center min-w-xl max-w-6xl mx-auto pt-32 pb-20">
-            {experience.map((experience) => (
-              <CardExperience key={experience.id} experience={experience} />
+            {experiencesData.map((experience) => (
+              <CardExperience {...experience} />
             ))}
           </div>
         </div>

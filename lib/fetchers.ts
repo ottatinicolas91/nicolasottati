@@ -1,11 +1,30 @@
 "use server";
 
-import { Experience } from "./types";
+import { experiences, projects } from "./types";
+import { experiencesData, projectsData } from "./data";
 
-export async function getExperience(): Promise<Experience[]> {
-  return await fetch("https://api.github.com/users/ottatinicolas91/repos").then(res => res.json());
+type ExperienceProps = (typeof experiencesData)[number];
+type ProjectProps = (typeof projectsData)[number];
+
+export async function getExperience({
+  type,
+  title,
+  location,
+  name,
+  company,
+  description,
+  icon,
+  date,
+}: ExperienceProps) {
+  return experiencesData.map((experience) => ({ ...experience }));
 }
 
-export async function getExperienceById(id: string): Promise<Experience> {
-  return await fetch(`https://api.github.com/users/ottatinicolas91/repos/${id}`).then(res => res.json());
+export async function getProject({
+  title,
+  description,
+  tags,
+  icon,
+  imageUrl,
+}: ProjectProps) {
+  return projectsData.map((project) => ({ ...project }));
 }
