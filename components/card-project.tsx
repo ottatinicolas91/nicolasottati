@@ -3,7 +3,7 @@
 import { useState } from "react";
 import ModalProject from "./modal-project";
 import { projectsData } from "@/lib/data";
-import { getProjects } from "@/lib/fetchers";
+import { getProject } from "@/lib/fetchers";
 import Image from "next/image";
 type ProjectProps = (typeof projectsData)[number];
 
