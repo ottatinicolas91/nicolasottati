@@ -28,7 +28,7 @@ export default function CardExperience({
   return (
     <div className="max-w-lg min-w-md w-full">
       <div className="relative max-w-lg w-full bg-white border shadow-xl rounded-xl p-4 md:p-5 z-10 mx-4 dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-950">
-        <h1 className="absolute -top-10 md:-top-10 md:-left-10 text-4xl font-bold text-neutral-300 dark:text-neutral-800">
+        <h1 className="absolute -top-10 md:-top-10 md:-left-10 text-4xl font-bold text-neutral-300 dark:text-neutral-600">
           {date ?? "2024"}
         </h1>
         <h3 className="text-lg font-bold text-gray-800 dark:text-white">
