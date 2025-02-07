@@ -1,12 +1,9 @@
-export type Experience = {
-  id?: string | null;
-  name?: string | null;
-  type?: string | null;
-  company?: string | null;
-  institution?: string | null;
-  startYear?: number | null;
-  startDate?: string | null;
-  endDate?: string | null;
-  description?: string | null;
-  url?: string | null;
-};
+"use client"
+
+import { experiencesData, projectsData } from "./data";
+
+type ExperienceProps = (typeof experiencesData)[number];
+type ProjectProps = (typeof projectsData)[number];
+
+export type experiences = ExperienceProps;
+export type projects = ProjectProps;

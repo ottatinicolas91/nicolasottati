@@ -1,5 +1,7 @@
+import Link from "next/link";
 import ContainerBlock from "@/components/container-block";
 import CardProject from "@/components/card-project";
+import { projectsData } from "@/lib/data";
 
 export default function ProjectsPage() {
   return (
@@ -12,8 +14,9 @@ export default function ProjectsPage() {
         </div>
         <div className="px-4 bg-[#F1F1F1] -mt-10 min-h-full dark:bg-neutral-800">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto py-20">
-            <CardProject />
-            <CardProject />
+            {projectsData.map((project) => (
+              <CardProject {...project} />
+            ))}
           </div>
         </div>
       </section>
