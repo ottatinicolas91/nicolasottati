@@ -1,7 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import thumbnailStudio from "@/public/thumbnail-studio.png";
 import rmtdevImg from "@/public/rmtdev.png";
@@ -10,12 +9,20 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 export const experiencesData = [
   {
     type: "Job",
-    title: "Junior Developer",
+    title: "Junior Software Developer, UI/UX Designer",
+    location: "Dubai, UAE | Remote",
+    name: "Your Home Renovations",
+    company: "YHMaintenance",
+    description: "I redesigned and developed the website of Yhmaintenance, a company that provides maintenance services to companies and individuals located in Dubai, UAE.",
+    date: "2025",
+  },
+  {
+    type: "Job",
+    title: "Junior Software Developer",
     location: "Barcelona - London | Remote",
     name: "Studio",
     company: "Trackstack",
     description: "I worked as a full-stack developer for 6 months in Studio, a new platform project from Trackstack. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
     date: "2024 - 2025",
   },
   {
@@ -25,7 +32,6 @@ export const experiencesData = [
     name: "Bootcamp",
     company: "Le Wagon",
     description: "I graduated after 3 months of a Ruby on Rails onsite intensive bootcamp. 3 months later I found my first job as a developer.",
-    icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
 ] as const;

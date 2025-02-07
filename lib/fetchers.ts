@@ -7,24 +7,13 @@ type ExperienceProps = (typeof experiencesData)[number];
 type ProjectProps = (typeof projectsData)[number];
 
 export async function getExperience({
-  type,
-  title,
-  location,
-  name,
-  company,
-  description,
-  icon,
-  date,
+  ...experience
 }: ExperienceProps) {
   return experiencesData.map((experience) => ({ ...experience }));
 }
 
 export async function getProject({
-  title,
-  description,
-  tags,
-  icon,
-  imageUrl,
+  ...project
 }: ProjectProps) {
   return projectsData.map((project) => ({ ...project }));
 }

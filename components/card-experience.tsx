@@ -1,12 +1,23 @@
 "use client"
 
+import React from "react";
+
 import Link from "next/link";
 import { experiencesData } from "@/lib/data";
 import Image from "next/image";
 import { experiences } from "@/lib/types";
 import CardExperienceDivider from "@/components/card-experience-divider";
 
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
+
 type ExperienceProps = (typeof experiencesData)[number];
+const experienceIcon = {
+  Job: React.createElement(CgWorkAlt),
+  Education: React.createElement(LuGraduationCap),
+  Project: React.createElement(FaReact),
+};
 
 export default function CardExperience({
   type,
@@ -15,7 +26,6 @@ export default function CardExperience({
   name,
   company,
   description,
-  icon,
   date,
 }: ExperienceProps) {
   return (
@@ -25,11 +35,14 @@ export default function CardExperience({
           {date ?? "2024"}
         </h1>
         <h3 className="text-lg font-bold text-gray-800 dark:text-white">
-          {title ?? "No title"} | {company ?? "No company"} | {name ?? "No name"}
+          {title ?? "No title"}
         </h3>
-        <p className="mt-1 text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">
-          {type ?? "No type"}
-        </p>
+        <div className="flex flex-row items-center gap-2 text-gray-800 dark:text-white">
+          {experienceIcon[type ?? "Job"]}
+          <h4 className="text-sm">
+            {company ?? "No company"} | {name ?? "No name"}
+          </h4>
+        </div>
         <p className="mt-2 text-gray-500 dark:text-neutral-400">
           {description ?? "No description"}
         </p>
