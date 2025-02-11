@@ -92,3 +92,26 @@ export const skillsData = [
   "Linear",
   "Vercel",
 ] as const;
+
+export const links = [
+  {
+    name: "Home",
+    hash: "/",
+  },
+  {
+    name: "About",
+    hash: "about",
+  },
+  {
+    name: "Contact",
+    hash: "contact",
+  },
+  {
+    name: "Experience",
+    hash: "experience",
+  },
+  {
+    name: "Projects",
+    hash: "projects",
+  },
+] as const;

@@ -1,25 +1,42 @@
+"use client";
+
+import NavbarScroll from "./navbar-scroll";
+import NavbarFixed from "./navbar-fixed";
 import NavLinks from "./nav-links";
 import NavSocials from "./nav-socials";
 import DarkModeToggle from "./dark-mode-toggle";
+import { motion } from "framer-motion";
+import { links } from "@/lib/data";
+import clsx from "clsx";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
-export default async function Navbar() {
+export default function Navbar() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+  const [isScrolling, setIsScrolling] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolling(true);
+    } else {
+      setIsScrolling(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 transition-all duration-200 fade-in-out bg-white dark:bg-black shadow-md">
-      <div className="flex justify-between items-center p-4 shadow-md">
-        <div className="flex flex-col items-start dark:text-white">
-          <div className="text-2xl text-gray-700 font-bold transition-all duration-200 fade-in-out dark:text-white">
-            Nicolas Ottati
-          </div>
-          <div className="text-sm text-gray-500 transition-all duration-200 fade-in-out dark:text-gray-400">
-            Junior Developer | Event & Project Manager
-          </div>
-        </div>
-        <NavLinks />
-        <div className="flex items-center gap-2">
-          <NavSocials />
-          <DarkModeToggle />
-        </div>
-      </div>
-    </div>
+    <>
+      {isScrolling ? (
+        <NavbarScroll isScrolling={isScrolling} />
+      ) : (
+        <NavbarFixed />
+      )}
+    </>
   );
 }
